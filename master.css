@@ -253,8 +253,11 @@ article h2{
 }
 article p{
   margin: 15px 5px;
-  text-align: justify;
 }
+.mainUl{
+  padding-left: 30px;
+}
+
 .priceContainers{
   margin: 15px 5px;
   padding: 0;
