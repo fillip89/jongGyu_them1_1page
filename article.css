@@ -1,0 +1,160 @@
+.mainContainer{
+  margin-bottom: 90px;
+}
+.mainContainer > div div{
+  padding: 90px 20px 0 20px;
+}
+.mainContainer > div div h1{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ced6e0;
+  font-weight: bold;
+}
+.mainContainer > div div h4{
+  padding-top: 48px;
+  font-weight: 700;
+}
+.mainContainer > div div p{
+  font-weight: 300;
+  padding: 10px 0 0 0;
+}
+
+
+.mainContainer div .section1AnimationContainer{
+  margin: 25px 0;
+  overflow: hidden;
+  position: relative;
+}
+.mainContainer div .section1AnimationContainer .section1Animation{
+  padding: 0;
+  font-size: 80px;
+  font-weight: 800;
+  text-align: justify;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#colorChangeFont{
+  animation: colorChangeFont 4.5s infinite;
+}
+@keyframes colorChangeFont {
+  0%{
+    color: black;
+  }
+  33.3%{
+    color: #0984e3;
+  }
+  66.6%{
+    color: #d63031;
+  }
+  100%{
+    color: black;
+  }
+}
+#whiteFont{
+  color: white;
+  margin-left: 390px;
+  animation: whiteFont 6s infinite;
+  animation-timing-function: linear;
+}
+@keyframes whiteFont {
+  0%{
+    margin-left: 390px;
+  }
+  100%{
+    margin-left: -390px;
+  }
+}
+
+
+#section2 div h4{
+  text-align: left;
+}
+#section2 div div.priceContainer{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#section2 div div.priceContainer div.items{
+  margin: 15px;
+  padding: 0;
+  border: 1px solid #ced6e0;
+  box-shadow: 0 0 10px #ced6e0;
+  width: 110px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+#section2 div div.priceContainer div.items div.label{
+  position: absolute;
+  background-color: #30336b;
+  color: white;
+  padding: 1px 40px;
+  top: 8px;
+  right: -40px;
+  transform: rotate(45deg);
+  font-size: 11px;
+}
+#section2 div div.priceContainer div.items div.label2{
+  position: absolute;
+  background-color: #e17055;
+  color: white;
+  padding: 1px 40px;
+  top: 8px;
+  right: -33px;
+  transform: rotate(45deg);
+  font-size: 11px;
+}
+#section2 div div.priceContainer div.items div.label3{
+  position: absolute;
+  background-color: #0fbcf9;
+  color: white;
+  padding: 1px 40px;
+  top: 8px;
+  right: -33px;
+  transform: rotate(45deg);
+  font-size: 11px;
+}
+
+#section2 div div.priceContainer div.items h4{
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+#section2 div div.priceContainer div.items h5{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+#section2 div div.priceContainer div.items p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 400;
+  color: #74b9ff;
+}
+
+#section2 div div.priceContainer div.items ul{
+  list-style: none;
+  text-align: center;
+  padding: 10px 0 18px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 350px) {
+  #iHome, #iWon, #iImage, #iCall{
+    margin: 20px 15px 20px 15px;
+  }
+}
+@media (min-width: 800px) {
+  .mainContainer{
+    width: 800px;
+    margin: 0 auto 90px auto;
+  }
+}
