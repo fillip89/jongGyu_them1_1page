@@ -243,7 +243,7 @@ header p{
 }
 article h1{
   margin: 80px 5px 0 5px;
-  font-size: 40px;
+  font-size: 33px;
   border-left: 10px solid #ff7979;
   border-bottom: 1px solid #ff7979;
   padding-left: 10px;
@@ -251,8 +251,8 @@ article h1{
 article h2{
   margin: 80px 5px 0 5px;
   font-size: 30px;
-  border-left: 10px solid #ff7979;
-  border-bottom: 1px solid #ff7979;
+  border-left: 10px solid #ffbe76;
+  border-bottom: 1px solid #ffbe76;
   padding-left: 10px;
 }
 article p{
