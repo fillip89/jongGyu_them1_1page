@@ -8,7 +8,7 @@ body{
   box-shadow: 0 0 10px #dfe6e9;
 }
 p{
-  line-height: 20px;
+  line-height: 23px;
 }
 .landingPage{
   width: 100%;
@@ -24,7 +24,7 @@ p{
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(img4.jpeg) no-repeat;
+  background: url(images/14-min.jpeg) no-repeat;
   background-size: cover;
   opacity: 0.5;
   -webkit-animation: cover 25s linear infinite;
@@ -255,10 +255,8 @@ article h2{
   padding-left: 10px;
 }
 article p{
-  margin: 15px 5px;
-}
-.mainUl{
-  padding-left: 30px;
+  margin: 15px 20px;
+  font-size: 14px;
 }
 
 .priceContainers{
@@ -267,9 +265,7 @@ article p{
   text-align: center;
   border-bottom: 2px dotted #ffbe76;
 }
-#EndPriceContainers{
-  border: none;
-}
+
 .priceContainer{
   display: inline-block;
   margin: 13px;
@@ -280,31 +276,33 @@ article p{
   height: 225px;
   overflow: hidden;
 }
-.priceContainers h3{
-  font-weight: 600;
-  padding: 15px 10px;
-  font-size: 18px;
-}
-.priceContainers h4{
-  padding: 0;
+.priceContainer h3{
   font-weight: 700;
-  font-size: 20px;
+  padding: 18px 0 15px 0;
+  font-size: 15px;
 }
-.priceContainers p{
+.priceContainer h4{
+  padding: 0;
+  font-weight: 900;
+  font-size: 16px;
+}
+.priceContainer div.time{
   margin: 0;
-  padding-bottom: 10px;
   text-align: center;
   font-size: 11px;
+  color: #74b9ff;
+  font-style: italic;
 }
-.priceContainers ul{
+.priceContainer ul{
   margin: 0;
-  padding: 0;
+  padding: 15px 0 0 0;
   list-style: none;
 }
-.priceContainers ul li{
+.priceContainer ul li{
   padding: 1px 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
+
 #LabelPositionRelative{
   position: relative;
 }
@@ -326,32 +324,18 @@ article p{
   position: absolute;
   background-color: #ff7979;
   color: #fff;
-  top: 7px;
-  right: -23px;
+  top: 6px;
+  right: -32px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  padding: 2px 30px;
+  padding: 2px 40px;
   font-size: 11px;
 }
-#label2section{
-  position: absolute;
-  background-color: #ffbe76;
-  color: #fff;
-  top: 7px;
-  right: -23px;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  padding: 2px 30px;
-  font-size: 11px;
-}
-.priceCallContainer, .priceCallContainer1, .priceCallContainer2{
-  padding: 10px 0 28px 0;
+.priceCallContainer, .priceCallContainer1{
+  padding: 20px 0 0 0;
 }
 .priceCallContainer .priceCall{
   margin: 0 auto;
@@ -433,13 +417,11 @@ a.priceATag{
   display: inline-block;
   margin: 15px 15px 0 15px;
   padding: 0;
-  width: 300px;
-  height: 250px;
+  width: 43%;
   border-radius: 20px;
 }
 .imagesContainers div img{
-  width: 300px;
-  height: 250px;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 10px gray;
 }
@@ -449,10 +431,6 @@ a.priceATag{
   margin: 30px auto 0 auto;
   box-shadow: 0 0 10px gray;
   max-width: 500px;
-}
-p.mapP{
-  margin-top: 5px;
-  text-align: center;
 }
 
 ul.contactUl{
@@ -478,9 +456,20 @@ footer{
   font-style: italic;
 }
 
+
+/* medai query */
+@media (min-width: 320px) {
+  .imagesContainers > div{
+    width: 80%;
+    height:
+  }
+}
 @media (min-width:800px) {
   body{
     width: 800px;
     margin: auto;
+  }
+  .imagesContainers > div{
+    width: 43%;
   }
 }
