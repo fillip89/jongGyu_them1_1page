@@ -135,7 +135,8 @@ header h1{
 }
 header p{
   color: #fff;
-  text-align: justify;
+  text-align: center;
+  font-size: 14px;
 }
 .mouse{
   width: 25px;
@@ -250,8 +251,8 @@ article h1{
 article h2{
   margin: 80px 5px 0 5px;
   font-size: 30px;
-  border-left: 10px solid #ffbe76;
-  border-bottom: 1px solid #ffbe76;
+  border-left: 10px solid #ff7979;
+  border-bottom: 1px solid #ff7979;
   padding-left: 10px;
 }
 article p{
@@ -458,10 +459,32 @@ footer{
 
 
 /* medai query */
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .imagesContainers > div{
     width: 80%;
-    height:
+  }
+  header h1{
+    font-size: 40px;
+  }
+  header p{
+    font-size: 12px;
+  }
+  footer{
+    font-size: 12px;
+  }
+  article p{
+    font-size: 12px;
+  }
+  .contactUl{
+    font-size: 12px;
+  }
+}
+@media (min-width: 321px) {
+  .imagesContainers > div{
+    width: 80%;
+  }
+  header h1{
+    font-size: 50px;
   }
 }
 @media (min-width:800px) {
